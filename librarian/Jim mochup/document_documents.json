@@ -1,0 +1,43 @@
+GET:  ../document/[documentId]
+{
+	"thisURL": "http://..../document/[documentId]",
+	"topic" : {
+		"id": "the id of the topic this document is in",
+		"name": "the name of the topic this document is in"
+	},
+	"concept" : {
+		"id": "the id of the concept this document is in",
+		"name": "the name of the concept this document is in"
+	},
+	"document": {
+		"id": "the document id",
+		"title": "user edited title (which if no changes, is the Sophia suggested title",
+		"abstract": "user edited abstract (which if no changes...",
+		"bodyURL":  "http://..../document/[documentId]/body",
+		"selected": true/false,
+		"tags": [
+			{
+				"name": "some tag name",
+				"selected":  true/false
+			},
+			{
+				"name":  "some other tag",
+				"selected": true/false
+			},
+			. . .
+		],
+		"neighbors" : [
+			{
+				"id": "the id of the document neighbor",
+				"documentURL": "http://.../document[documentId]",
+				"selected":  true/false
+			},
+			{
+				"id": "the id of another neighbor",
+				. . .
+			}
+		]
+	}
+}
+
+

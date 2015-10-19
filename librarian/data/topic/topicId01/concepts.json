@@ -1,0 +1,39 @@
+{
+	"thisURL": "data/topic/topicId01/concepts.json",
+	"topic" : {
+		"id": "topicId01",
+		"name": "Topic 01 - Real Estate",
+		"selected":true
+	},
+	"concepts": [
+		{
+			"id": "conceptId01",
+			"selected": true,
+			"numDocuments": 3,
+			"name": "ConceptId01 - Commercial Real Estate",			
+			"documentsURL": "data/topic/topicId01/concept/conceptId01/documents.json"
+		},
+		{
+			"id": "conceptId02",
+			"selected": true,
+			"numDocuments": 5,
+			"name": "ConceptId02 - Residential Real Estate",			
+			"documentsURL": "data/topic/topicId01/concept/conceptId02/documents.json"
+		},
+		{
+			"id": "conceptId03",
+			"selected": false,
+			"numDocuments": 2,
+			"name": "ConceptId03 - Commercial Real Estate - NorthEast",	
+			"documentsURL": "data/topic/topicId01/concept/conceptId03/documents.json"
+		},
+		{
+			"id": "conceptId04",
+			"selected": true,
+			"numDocuments": 7,
+			"name": "ConceptId04 - Commercial Real Estate - SouthWest",
+			"documentsURL": "data/topic/topicId01/concept/conceptId04/documents.json"
+		}
+	]
+}
+

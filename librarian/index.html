@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta charset=utf-8 /> 
+<title>Sophia DLwork 3 Panes </title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body onload="getTopics('rest/topics')">
+    <div id="container">
+		<div id="article"> 	
+			<h1>C. R. Web Development</h1>
+			<h2>Digital Librarian</h2> 			
+			<p>Click on a topic or document list to get the relate document list or document showing up in the right pane.</p>
+			<fieldset>
+				<legend> Topics </legend>	
+				<div id="topic"> 
+					<h2>Topics: </h2> 		
+				</div> 
+			</fieldset>
+			<fieldset>
+				<legend> Document List </legend>
+				<div id="documentlist"> 
+					<h2>Document Lists</h2> 
+				</div> 
+			</fieldset>
+			<fieldset id="documentfieldset">
+				<legend> Document </legend>
+			<!--	<div class="publish">Publish</div> -->
+				<div id="document"> 
+					<h2>Document:</h2> 			
+				</div> 
+			</fieldset>			
+		</div>
+	
+		<script type="text/javascript" src="js/getjsonthreepane.js"></script>
+	</div>
+</body>
+</html>

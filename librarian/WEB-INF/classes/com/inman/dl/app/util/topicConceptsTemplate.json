@@ -1,0 +1,16 @@
+{
+	"thisURL": "http://..../topic/[topicId]/concepts",
+	"topic" : {
+		"id": "the id of the topic this concept is in",
+		"name": "the name of the topic this concept is in"
+	},
+	"concepts": [
+		{
+			"id": "the concept id",
+			"name": "user edited name",
+			"selected": true,
+			"numDocuments": 20,
+			"documentsURL": "http://.../topic/[topicId]/concept/[conceptId]/documents"
+		}
+	]
+}

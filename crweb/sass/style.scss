@@ -1,0 +1,113 @@
+/*
+	rules of specification
+	p
+	footer p
+	body footer p
+	.hightlight
+	footer .highlight
+	order of identical specification, last one wins
+	Author: Cheryl Rick 
+	Organization: C. R. Web Development
+*/
+
+@import "customFonts";
+
+/* ------------------  html, body, and main elements  ------ */
+html {
+	background-color: #405c71;
+	line-height: 1.7;
+}
+
+body {
+	font-family: 'PTSans', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 a {
+	color: #fff;
+}
+
+.spacing {
+	margin-top: 0;
+	letter-spacing: 4.1px;
+	margin-bottom: 40px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 1280px) {
+	body {
+		font-size: 16px;
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@import "header";
+ 
+@import "siteNav";
+
+@import "imgBanner";
+
+@import "content";
+
+@import "bounceAnimation";
+
+@import "starAnimation";
+
+@import "slideshow";
+
+@import "button";
+ 
+@import "hideShow";
+
+@import "form";
+
+@import "imgModal";
+
+@import "spriteUIMenu";
+
+@import "grid";
+
+@import "footer";
+ 
+
+/* ------------------  clear fix  --------------------- */
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.row:after,
+.group:after {
+	clear: both;
+}
+
+.row,
+.group {
+	zoom: 1;
+}

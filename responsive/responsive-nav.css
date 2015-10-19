@@ -1,0 +1,39 @@
+#nav-toggle
+{
+	display: block;
+	padding: .8em .8em .8em 50px;
+	color: #fff;
+	background-color: #8C6239;
+	background-image: url(responsive-nav.png);
+	background-repeat: no-repeat;
+	background-position: 20px 50%;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}
+
+/* -----------------------------------
+Predefined
+----------------------------------- */
+
+.js #nav
+{
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+}
+
+#nav.opened { max-height: 9999px; }
+
+/* -----------------------------------
+Navigation wide screen
+----------------------------------- */
+
+@media (min-width: 38em)
+{
+	.js #nav { position: relative; }
+	.js #nav.closed { max-height: none; }
+	#nav-toggle { display: none; }
+}

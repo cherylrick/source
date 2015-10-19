@@ -1,0 +1,55 @@
+{
+    "thisURL": "http://localhost:8080/librarian/document/123",
+    "topic": {
+        "id": "${topic.id}",
+        "name": "${topic.name}"
+    },
+    "concept": {
+        "id": "C01",
+        "name": "Butter"
+    },
+    "document": {
+        "id": "123",
+        "sourceId": "using this info helps access doc in source system.....",
+        "title": {
+            "text": "What is the stuff in stuffing?",
+            "selected": true
+        },
+        "summary": {
+            "text": "Butter in the batter makes it better.",
+            "selected": false
+        },
+        "bodyURL": "http://localhost:8080/librarian/document/123/body",
+        "selected": true,
+        "tags": [{
+            "name": "butter",
+            "sophiaName": "butter",
+            "selected": true
+        },
+        {
+            "name": "bread",
+            "sophiaName": "croutons",
+            "selected": false
+        },
+        {
+            "name": "sausage",
+            "sophiaName": "pork",
+            "selected": true
+        },
+        {
+            "name": "goopy stuff",
+            "sophiaName": "gravy",
+            "selected": false
+        }],
+        "neighbors": [{
+            "id": "333",
+            "documentURL": "http://localhost:8080/librarian/document/333",
+            "selected": true
+        },
+        {
+            "id": "444",
+            "documentURL": "http://localhost:8080/librarian/document/444",
+            "selected": false
+        }]
+    }
+}

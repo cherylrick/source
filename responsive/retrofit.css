@@ -1,0 +1,160 @@
+/* -----------------------------------
+Basic rules
+----------------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #ffff;
+	font: 100%/1 helvetica, arial, sans-serif;
+}
+
+h1, h2, h3 { margin: 0 0 .2em; }
+h1 { font-size: 30px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+
+p
+{
+	margin: 0 0 1em;
+	line-height: 1.4;
+}
+
+img
+{
+	max-width: 100%;
+	border: 0;
+	vertical-align: middle;
+}
+
+.figure
+{
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+/* -----------------------------------
+Layout
+----------------------------------- */
+
+.container
+{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.row
+{
+	clear: left;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.row-padding { padding: 30px 3.125%; }
+
+.main
+{
+	float: left;
+	width: 65.55556%;
+}
+
+.aside
+{
+	float: right;
+	width: 31.11111%;
+}
+
+.footer
+{
+	border-top: 5px solid #DB7427;
+	color: #fff;
+	background: #006837;
+}
+
+/* -----------------------------------
+feature
+----------------------------------- */
+
+.feature
+{
+	background: #EDF9F7;
+	padding: 30px 5.08475%;
+}
+
+.feature-col
+{
+	float: left;
+	width: 47.16981%;
+	margin: 0 5.66038% 0 0;
+}
+
+.feature-col-last { margin-right: 0; }
+
+/* -----------------------------------
+Cols3
+----------------------------------- */
+
+.cols3
+{
+	float: left;
+	width: 31.11111%;
+	margin: 0 3.33333% 0 0;
+}
+
+.cols3-last { margin-right: 0; }
+
+/* -----------------------------------
+nav
+----------------------------------- */
+
+#nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li { display: inline; }
+
+#nav a
+{
+	float: left;
+	width: 16.66667%;
+	padding: .8em 0;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	background: #8C6239 url(nav.png) no-repeat 100% 0;
+}
+
+#nav a:hover {
+	background-color: #db7427; 
+}
+
+/* -----------------------------------
+narrow
+----------------------------------- */
+@media (max-width: 38em)
+{
+	.row-padding { padding: 20px; }
+	
+	.main, .aside, .feature-col, .cols3 
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0 0 1em;
+	}
+	
+	#nav a {
+		float: none;
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		background-image: none;
+		text-align: left;
+		text-indent: 20px;
+	}
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 - CSS3 form</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>	
+  <script src="js/cycle2.js"></script>
+	<script src="js/declarativeToggle.js"></script>
+</head>
+<body>
+		<header class="section">
+			<div class="container">
+				<h1><a href="index.html">C. R. Web Development</a></h1>
+				<p class="spacing">HTML5, CSS3 &amp; Responsive Design</span> </p>
+				
+				<span data-toggle-target=".site-nav" class="toggle-btn">MENU</span>
+				<nav class="site-nav">
+					<ul class="group">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="slides.html">Slides Show</a></li>
+						<li><a href="animations.html">Animations</a></li>
+						<li><a href="forms.html" class="current">Forms</a></li>
+						<li class="hide-small"><a href="#">FAQs</a></li>
+						<li class="hide-small"><a href="#">Links</a></li>
+						<li><a href="photoGallery.html">Photo Gallery</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	
+		<div class="content-area group section">
+				<div class="container">
+				
+					<div class="row">
+						<main class="col col-md-8 push-down-sm main-area">
+													
+							<section>
+								<h1>Form layout</h1>
+								<form>
+									<label for="firstname" class="hidden-label">First Name:</label>
+									<input type="text" id="firstname" name="firstname" placeholder="First name">
+									<br>
+									<label for="lastname" class="hidden-label">Last Name:</label>
+									<input type="text" id="lastname" name="lastname" placeholder="Last name">
+									<br>
+									<label for="email" class="hidden-label">Email:</label>
+									<input type="email" id="email" name="email" placeholder="Email">
+									<br>
+									<label for="telephone" class="hidden-label">Telephone:</label>
+									<input type="tel" id="telephone" name="telephone" placeholder="Telephone">
+									<br>
+									<label for="favoriteColor" class="hidden-label">What is your favorite color</label>
+									<select name="favoriteColor" id="favoriteColor">
+										<option value="colorRed">Red</option>
+										<option value="colorOrange">Orange</option>
+										<option value="colorYellow">Yellow</option>
+										<option value="colorPink">Pink</option>
+										<option value="colorPurple">Purple</option>
+									</select>
+									<br>
+									<fieldset>
+										<p>What is your favorite meal?</p>
+										<input type="radio" name="favoriteMeal" id="breakfast" value="meal1"><label for="breakfast">Breakfast</label>
+										<input type="radio" name="favoriteMeal" id="lunch" value="meal2"><label for="lunch">Lunch</label>
+										<input type="radio" name="favoriteMeal" id="dinner" value="meal3"><label for="dinner">Dinner</label>
+									</fieldset>
+									<br>
+									<fieldset>
+										<p>Which meals do you enjoy? (check all that apply)</p>
+										<input type="checkbox" name="likeMeal" id="likebreakfast" value="meal1"><label for="likebreakfast">Breakfast</label>
+										<input type="checkbox" name="likeMeal" id="likelunch" value="meal2"><label for="likelunch">Lunch</label>
+										<input type="checkbox" name="likeMeal" id="likedinner" value="meal3"><label for="likedinner">Dinner</label>
+									</fieldset>
+									<br>
+									<label for="yourmessage" class="hidden-label">Your Message:</label>
+									<textarea id="yourmessage" name="yourmessage" placeholder="Message here . . ."></textarea>
+									<br><br>
+									<input type="submit" value="Save!">
+								</form>
+							</section>							
+							
+						</main> <!-- col-md-8 -->
+						
+						<aside class="col col-md-4 sidebar">
+							<h3>Secondary Information </h3>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+							</p>
+							<p>
+							Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+							</p>
+						</aside>
+					</div> <!-- row -->
+					
+				</div> <!-- container -->
+			</div>
+				
+		<footer>
+				<p>&copy; 2015 - C. R. Web Development.</p>
+				<p class="highlight">All right reserved.</p>	
+		</footer>
+	
+	
+</body>
+</html>

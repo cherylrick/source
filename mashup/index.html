@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+	<meta charset="UTF-8">
+	<title>8Coupons, Google Maps - API Meshup</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container">
+		<h1>C. R. Web Devlopment</h1>
+    <h2>8Coupons & Google Map Mesh Up</h2>
+    <h3>Please enter search critiria to get coupons information</h3>
+    <p class="notice">* Default zip code is 10011<br />
+    ** if no map shows up, it means zip code entered does not exist, please try again!</p>
+    <div id="userinput">
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Coupons search reguest:</legend>        
+          <p><label for="zipcode">Please enter 5 digits zip code: </label>
+            <input id="zipcode" type="text" placeholder="Zip code ..." /><span class="error"></span></p>
+          <p><label for="radius">Please select search radius: </label>
+            <select id="radius" name="radius">
+              <option value="5">5 miles</option>
+              <option value="10">10 miles</option>
+              <option value="20">20 miles</option>
+              <option value="30">50 miles</option>
+            </select></p>
+          <p><label for="category">Please select the category: </label>
+            <select id="category" name="category">
+              <option value="1">Restaurants</option>
+              <option value="2">Entertainment</option>
+              <option value="3">Beauty & Spa</option>
+              <option value="4">Services</option>
+              <option value="6">Shopping</option>
+            </select></p>
+          <p><input id="submit" type="button" value="Search" /></p>
+        </fieldset>
+      </form>      
+    </div>
+    <hr />
+    <div id="coupons">
+        <p>Coupons info will go here -</p>
+        <ol id="mycoupons">     
+        </ol>
+    </div>
+    <div id="map">Map goes here - </div>
+    <hr />
+    <div id="footer">    
+    &copy; 2012 Cheryl Rick</div>
+	</div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>		
+  <script type="text/javascript" src="js/meshup.js"></script>
+</body>
+</html>	

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 - CSS3 media</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>	
+  <script src="js/cycle2.js"></script>
+	<script src="js/declarativeToggle.js"></script>
+</head>
+<body>
+		<header class="section">
+			<div class="container">
+				<h1><a href="index.html">C. R. Web Development</a></h1>
+				<p class="spacing">HTML5, CSS3 &amp; Responsive Design</span> </p>
+				
+				<span data-toggle-target=".site-nav" class="toggle-btn">&#9776; Menu MENU</span>
+				<nav class="site-nav">
+					<ul class="group">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="slides.html">Slides Show</a></li>
+						<li><a href="animations.html">Animations</a></li>
+						<li><a href="media.html" class="current">Audio &amp; Video</a></li>
+						<li><a href="forms.html">Forms</a></li>
+						<li class="hide-small"><a href="#">FAQs</a></li>
+						<li class="hide-small"><a href="#">Links</a></li>
+						<li><a href="photoGallery.html">Photo Gallery</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	
+		<div class="content-area group section">
+				<div class="container">
+				
+					<div class="row">
+						<main class="col col-md-8 push-down-sm main-area">
+							<h1>Media</h1>						
+							<section>
+								<h2>Music</h2>
+								<p>Happy Days</p>
+								<audio controls>
+									<source src="audio/Happy_Days.mp3" type="audio/mpeg">
+									<source src="audio/Happy_Days.ogg" type="audio/ogg">
+									<a href="audio/Happy_Days.mp3">Happy Days</a>
+								</audio>
+							</section>							
+							
+							<section>
+								<h2>Video</h2>
+								<p>Happy Days</p>
+								<video controls>
+									<source src="video/mov_bbb.mp4" type="video/mp4">
+									<source src="video/mov_bbb.webm" type="video/webm">
+									<source src="video/mov_bbb.ogv" type="video/ogg">
+									Your web browser is outdated and does not support HTML video. Please consider <a href="http://browsehappy.com">Updating</a>.
+								</video>
+							</section>		
+						</main> <!-- col-md-8 -->
+						
+						<aside class="col col-md-4 sidebar">
+							<h3>Secondary Information </h3>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+							</p>
+							<p>
+							Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+							</p>
+						</aside>
+					</div> <!-- row -->
+					
+				</div> <!-- container -->
+			</div>
+				
+		<footer>
+				<p>&copy; 2015 - C. R. Web Development.</p>
+				<p class="highlight">All right reserved.</p>	
+		</footer>
+	
+	
+</body>
+</html>

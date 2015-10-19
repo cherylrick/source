@@ -1,0 +1,17 @@
+{
+    "thisURL": "http://localhost:8080/librarian/document/123",
+    "topic": {
+        "id": "${topic.id}",
+        "name": "${topic.name}"
+    },
+    "concept": {
+        "id": "C01",
+        "name": "Butter"
+    },
+    "document": {
+        "id": "123",
+        "title": "What is the stuff in stuffing?",
+        "body": "http://localhost:8080/librarian/document/123/body"
+
+    }
+}

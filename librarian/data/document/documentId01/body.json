@@ -1,0 +1,20 @@
+{
+	"thisURL": "data/document/documentId01/body.json",
+	"topic" : {
+		"id": "topicId01",
+		"name": "Topic 01 - Real Estate",
+		"selected": true
+	},
+	"concept" : {
+		"id": "conceptId01",
+		"name": "conceptId01 - Commercial Real Estate",
+		"selected": true
+	},
+	"document": {
+		"id": "documentId01",
+		"title": "documentId01 - Commercial Real Estate trend",
+		"body": "Student Housing Moves to the Mainstream Considering the overall economy is still shaky, the capital markets are funding a lot of student housing deals these days at quite aggressive rates and terms."
+	}
+}
+
+

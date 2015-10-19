@@ -1,0 +1,19 @@
+GET:  ../document/[documentId]/body
+{
+	“thisURL”: “http://..../document/[documentId]/body”,
+	“topic” : {
+		“id”: “the id of the topic this document is in”,
+		“name”: “the name of the topic this document is in”
+	},
+	“concept” : {
+		“id”: “the id of the concept this document is in”,
+		“name”: “the name of the concept this document is in”
+	},
+	“document”: {
+		“id”: “the document id”,
+		“title”: “user edited title (which if no changes, is the Sophia suggested title”
+	},
+	“body”: “BIG text string that is the document body(text) in Sophia...”
+}
+
+

@@ -1,0 +1,44 @@
+<section>
+    <h1>Form layout</h1>
+    <form>
+        <label for="firstname" class="hidden-label">First Name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="First name">
+        <br>
+        <label for="lastname" class="hidden-label">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last name">
+        <br>
+        <label for="email" class="hidden-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <br>
+        <label for="telephone" class="hidden-label">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Telephone">
+        <br>
+        <label for="favoriteColor" class="hidden-label">What is your favorite color</label>
+        <select name="favoriteColor" id="favoriteColor">
+            <option value="colorRed">Red</option>
+            <option value="colorOrange">Orange</option>
+            <option value="colorYellow">Yellow</option>
+            <option value="colorPink">Pink</option>
+            <option value="colorPurple">Purple</option>
+        </select>
+        <br>
+        <fieldset>
+            <p>What is your favorite meal?</p>
+            <input type="radio" name="favoriteMeal" id="breakfast" value="meal1"><label for="breakfast">Breakfast</label>
+            <input type="radio" name="favoriteMeal" id="lunch" value="meal2"><label for="lunch">Lunch</label>
+            <input type="radio" name="favoriteMeal" id="dinner" value="meal3"><label for="dinner">Dinner</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>Which meals do you enjoy? (check all that apply)</p>
+            <input type="checkbox" name="likeMeal" id="likebreakfast" value="meal1"><label for="likebreakfast">Breakfast</label>
+            <input type="checkbox" name="likeMeal" id="likelunch" value="meal2"><label for="likelunch">Lunch</label>
+            <input type="checkbox" name="likeMeal" id="likedinner" value="meal3"><label for="likedinner">Dinner</label>
+        </fieldset>
+        <br>
+        <label for="yourmessage" class="hidden-label">Your Message:</label>
+        <textarea id="yourmessage" name="yourmessage" placeholder="Message here . . ."></textarea>
+        <br><br>
+        <input type="submit" value="Save!">
+    </form>
+</section>			

@@ -1,0 +1,111 @@
+<div class="col-md-12">
+        <form class="form-horizontal" ng-submit="submit">
+
+          <div class="form-group">
+						<label id="orientation" for="city" class="col-sm-4 control-label">What is your City?</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="city" ng-model="city" placeholder="What's Your City?">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label id="orientation" for="orientation" class="col-sm-4 control-label">What way does your roof face?</label>
+            <div class="col-sm-8">
+              <div class="checkboxgroup">
+                <label for="south">
+									<img src="images/roofOrientation/south.png" alt="South" /><br>South</label>
+                <input type="radio" name="orientation" id="south" ng-model="orientation" value="180" />
+              </div>
+              <div class="checkboxgroup">
+                <label for="west">
+									<img src="images/roofOrientation/west.png" alt="West" /><br>SouthW</label>
+                <input type="radio" name="orientation" id="west" ng-model="orientation" value="225" />
+              </div>
+              <div class="checkboxgroup">
+                <label for="southwest">
+									<img src="images/roofOrientation/southwest.png" alt="South" /><br>SouthWest</label>
+                <input type="radio" name="orientation" id="southwest" ng-model="orientation" value="90" />
+              </div>
+              <div class="checkboxgroup">
+                <label for="southeast">
+									<img src="images/roofOrientation/southeast.png" alt="SouthEast" /><br>SouthEast</label>
+                <input type="radio" name="orientation" id="southeast" ng-model="orientation" value="135" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label id="tilt" for="tilt" class="col-sm-4 control-label">What does your roof looks like?</label>
+            <div class="col-sm-8">
+							<div class="checkboxgroup">
+								<label for="flatroof">
+									<img src="images/roofIncline/flat-roof.png" alt="Flat roof" />
+								</label>
+                <input type="radio" name="tilt" id="flatroof" ng-model="tilt" value="0"> 
+							</div>	
+							<div class="checkboxgroup">
+                <label for="slighttilt"> <img src="images/roofIncline/no-tree-coverage.png" alt="Slightly tilt" />
+                </label>
+								<input type="radio" name="tilt" id="slighttilt" ng-model="tilt" value="15">
+							</div>
+							<div class="checkboxgroup">
+                <label for="slightincline">
+									<img src="images/roofIncline/slight-incline-roof.png" alt="Tilt" />
+                </label>
+                <input type="radio" name="tilt" id="slightincline" ng-model="tilt" value="30"> 
+							</div>	
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label id="tree" for="tree" class="col-sm-4 control-label"> What does your house looks like?</label>
+            <div class="col-sm-8">
+							<div class="checkboxgroup2">
+								<label class="radio-inline" for="notree">
+									<img src="images/roofShading/no-tree-coverage.png" alt="No tree" />
+                </label>								
+                <input type="radio" name="tree" id="notree" ng-model="tree" value="1">
+							</div> 
+							<div class="checkboxgroup2">
+                <label class="radio-inline" for="smalltree">
+									<img src="images/roofShading/small-tree-coverage.png" alt="Small trees" />
+                </label>
+                  <input type="radio" name="tree" id="smalltree" ng-model="tree" value="1.0"> 
+							</div>
+							<div class="checkboxgroup2">
+                <label class="radio-inline" for="bigtree">
+									<img src="images/roofShading/west-east-big-tree-coverage.png" alt="Trees slightly cover the roof" />
+                </label>
+                  <input type="radio" name="tree" id="bigtree" ng-model="tree" value="0.85"> 
+							</div>
+							<div class="checkboxgroup2">
+                <label class="radio-inline" for="shadetree">
+									<img src="images/roofShading/all-side-big-tree-coverage.png" alt="Big tree shading the roof" />
+                </label>
+                  <input type="radio" name="tree" id="shadetree" ng-model="tree" value="0.5"> 
+							</div>	
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bill" class="col-sm-4 control-label">What is your average monthly electric bill? </label>
+            <div class="col-sm-8">
+              <select id="bill" class="form-control" ng-model="bill">
+                <option value="80">$0 - $80</option>
+                <option value="100">$80 - $120</option>
+                <option value="150">$120 - $180</option>
+                <option value="200">$180+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-8">
+              <button type="submit" id="estimate" class="btn btn-primary">Estimate</button>
+              <button type="reset" id="clear" class="btn btn-secondary" onclick="window.location.reload()">Reset</button>
+            </div>
+          </div>
+
+        </form>        
+      </div>
+			<hr>

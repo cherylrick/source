@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta charset=utf-8 /> 
+<title>Sophia DLwork 3 Panes </title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+    <div id="container">
+		<div id="article"> 	
+			<h1>Digital Librarian</h1> 			
+			<p>Click on a topic or document list to get the relate document list or document showing up in the right pane.</p>
+			<fieldset>
+				<legend> Topics </legend>	
+						
+				<div id="topic"> 
+					<h2>Topics: </h2> 		
+				</div> 
+			</fieldset>
+			<fieldset>
+				<legend> Document List </legend>
+				
+				<div id="documentlist"> 
+					<h2>Document Lists</h2> 
+					<ul>
+						<li><a href="javascript:getDocument('rest/document/28903');"> 28903</a><li>
+						<li><a href="javascript:getDocument('rest/document/21904');"> 21904</a><li>
+						<li><a href="javascript:getDocument('rest/document/41327');"> 41327</a><li>
+						<li><a href="javascript:getDocument('rest/document/24238');"> 24238</a><li>
+						<li><a href="javascript:getDocument('rest/document/41341');"> 41341</a><li>
+						<li><a href="javascript:getDocument('rest/document/44126');"> 44126</a><li>
+						<li><a href="javascript:getDocument('rest/document/45993');"> 45993</a><li>
+						<li><a href="javascript:getDocument('rest/document/22016');"> 22016</a><li>
+						<li><a href="javascript:getDocument('rest/document/64470');"> 64470</a><li>
+						<li><a href="javascript:getDocument('rest/document/66163');"> 66163</a><li>
+						<li><a href="javascript:getDocument('rest/document/19971');"> 19971</a><li>
+					</ul>
+				</div> 
+			</fieldset>
+			<fieldset id="documentfieldset">
+				<legend> Document </legend>
+				
+				<div id="document"> 
+					<h2>Document:</h2> 			
+				</div> 
+			</fieldset>			
+		</div>
+	
+		<script type="text/javascript" src="js/getjsonthreepane.js"></script>
+	</div>
+</body>
+</html>

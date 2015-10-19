@@ -1,0 +1,55 @@
+/* -----------  Reveal and Hide Styles  --------------------- */
+.read-more {
+	text-decoration: underline;
+	color: blue;
+}
+.read-more:hover {
+	text-decoration: none;
+}
+
+.toggle-btn {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+	.toggle-btn-visible {
+		display: block;
+	}
+
+	.toggle-target-hidden {
+		display: none;
+	}
+
+	.toggle-target-expanded {
+		display: block;
+	}
+}
+
+.main-area .toggle-btn-visible {
+	display: block;
+}
+
+.main-area .toggle-target-hidden {
+	display: none;
+}
+
+.main-area .toggle-target-expanded {
+	display: block;
+}
+
+/* ---    for SPA AngularJS    ---- */
+.collapse-text-toggle {
+    font-size: 0.9em;
+    color: #5F89A9;
+    cursor: pointer;
+}
+.collapse-text-toggle:hover {
+    color: #405c71;
+}
+.collapse-text-toggle:before {
+    content: '\00a0(';
+}
+.collapse-text-toggle:after {
+    content: ')';
+}

@@ -1,0 +1,152 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f6f6f6;
+}
+
+#tagline {
+    color: rgb(149, 165, 166);
+    font-size: 150%;
+    font-style: italic;
+    font-weight: 700;
+}
+
+hr { 
+    border: 1px solid #ccc; 
+    width: 90%; 
+}
+
+#brand-cover {
+	margin-top: 10px;
+	margin-bottom: 30px;
+} 
+
+#solarcublogo {
+	width: 100px;
+	height: 150px;
+}
+/*
+form[novalidate] input. form[novalidate] select {
+    border-color: rgb(149, 165, 166);
+    border-style: solid;
+}
+
+input[required].ng-pristine, select[required].ng-pristine {
+    border-color: #e74c3c;
+}
+
+input.ng-invalid.ng-dirty, select.ng-invalid.ng-dirty {
+    border-color: crimson;
+}
+
+.error { color: red; }
+*/
+
+#to-be-hidden.ng-hide-add.ng-hide-add-active, #to-be-hidden.ng-hide-remove.ng-hide-remove-active {
+    -webkit-transition: all linear 3s;
+    transition: : 3s linear all;
+}
+/*
+.animate-enter, 
+.animate-leave {
+    -webkit-transition: 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -moz-transition: 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -ms-transition: 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -o-transition: 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    transition: 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+}
+
+.animate-enter {
+    top: -100%;
+}
+
+.animate-enter.animate-enter-active {
+    top: 0;
+}
+
+.animate-leave {
+    top: 0;
+}
+.animate-leave.animate-leave-active{
+    top: 100%;
+}
+*/
+.control-label {
+    font-size: 125%;
+}
+
+input.ng-valid.ng-dirty {
+    border-color: rgb(149, 165, 166);
+}
+
+.radioGroup {
+    display: inline-block;
+}
+
+.radioGroup .btn-default:hover { 
+    background-color: rgb(247, 189, 97);
+    border: 1px solid rgb(162, 98, 23);
+}
+
+.radioGroup label {
+    border: 1px solid rgb(162, 98, 23);
+    position: relative;
+	border-radius: 5px; 
+    width: 185px;
+    height: 100px; 
+    padding-top: 15px;
+    padding-left: 5px;
+    margin: auto;
+    margin-bottom: 3px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.radioGroup .short { padding-top: 30px; }
+
+.radioGroup .short2 { padding-top: 35px; }
+
+.radioGroup input[type="radio"]:checked + label { 
+    background-color: rgb(243,156, 18);
+}
+
+.resultTitle { 
+    text-align: center;  
+    font-size: 200%; 
+    min-height: 90px;
+}
+
+.result, .suggestion {
+    border: 4px solid rgb(247, 189, 97);
+    border-radius: 10px;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: white;
+    color: rgb(72, 35, 10);
+}
+
+.result-description{
+    text-align: center;
+}
+
+.link-img {
+    max-width: 225px;
+    max-height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.suggestion {
+    padding: 10px 30px;
+    font-size: 150%;
+    text-align: left;
+}
+
+.usd { font-size: 5em; }
+
+.footer { padding-top: 60px; paddding-bottom: 60px; }
+
+.text-muted { text-align: center; }

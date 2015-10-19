@@ -1,0 +1,22 @@
+/* --------------------   button A style  --------------------- */
+.btn-a {
+	padding: 6px 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #365267;
+	color: #fff;
+	font-size: 84%;
+	margin-left: 10px;
+}
+
+.btn-a:hover {
+	background-color: #fff;
+	color: #365267;
+}
+
+@media screen and (max-width: 767px) {
+	.box-a {
+		margin-bottom: 15px;
+	}
+}

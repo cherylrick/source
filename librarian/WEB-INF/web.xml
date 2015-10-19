@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="inman-dl">
+
+    <display-name>librarian</display-name>
+    <description>inman document librarian</description>
+
+
+        <!-- Spring configuration file -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/classes/spring-app.xml</param-value>
+    </context-param>
+
+    <!-- Start Spring -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+          <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+   </listener>
+
+    <!-- REST Services -->
+    <servlet>
+        <servlet-name>Rest_Servlet</servlet-name>
+        <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
+        <!--<init-param>-->
+            <!--<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>-->
+            <!--<param-name>true</param-name>-->
+        <!--</init-param>-->
+        <init-param>
+		<param-name>com.sun.jersey.config.property.packages</param-name>
+		<param-value>com.inman.dl.rest</param-value>
+	</init-param>
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Rest_Servlet</servlet-name>
+        <!-- Redirect api calls to our jersey servlet -->
+        <url-pattern>/rest/*</url-pattern>
+
+    </servlet-mapping>
+
+</web-app>

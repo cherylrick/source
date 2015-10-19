@@ -1,0 +1,26 @@
+GET:  ../topic/[topicId]/concept/[conceptId]/documents
+{
+	"thisURL": "http://..../topics[topicId]/concept/[conceptId]/documents",
+	"topic" : {
+		"id": "the id of the topic this document is in",
+		"name": "the name of the topic this document is in"
+	},
+	"concept" : {
+		"id": "the id of the concept this document is in",
+		"name": "the name of the concept this document is in"
+	},
+	"documents": [
+		{
+			"id": "the document id",
+			"title": "user edited title (which if no changes, is the Sophia suggested title",
+			"selected": true/false,
+			"documentURL": "http://.../document/[documentId]"
+		},
+		{
+			"id": "another document id", . . .
+		}
+		. . .
+	]
+}
+
+

@@ -1,0 +1,40 @@
+{
+	"thisURL": "data/topicId01/concept/conceptId01/documents.json",
+	"topic" : {
+		"id": "topicId01",
+		"name": "Topic 01 - Real Estate",
+		"selected":true
+	},
+	"concept" : {
+		"id": "conceptId01",
+		"name": "ConceptId01 - Commercial Real Estate",
+		"selected":true
+	},
+	"documents": [
+		{
+			"id": "documentId01",
+			"selected": true,
+			"title": {
+				"selected":true,
+				"text":"documentId01 - Commercial Real Estate trend"},			
+			"documentURL": "data/document/documentId01.json"
+		},
+		{
+			"id": "documentId02",
+			"selected": true,
+			"title": {
+				"selected":true,
+				"text":"documentId02 - Commercial Real Estate Financing"},			
+			"documentURL": "data/document/documentId02.json"
+		},
+		{
+			"id": "documentId03",
+			"selected": true,
+			"title": {
+				"selected":true,
+				"text":"documentId03 - Commercial Real Estate trend"},			
+			"documentURL": "data/document/documentId03.json"
+		}
+	]
+}
+

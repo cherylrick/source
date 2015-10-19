@@ -1,0 +1,26 @@
+{
+	"thisURL": "data/topics.json",
+	"topics": [
+		{
+			"id": "topicId01",
+			"selected": true,
+			"numDocuments": 17,
+			"name": "Topic 01 - Real Estate",			
+			"conceptsURL": "data/topic/topicId01/concepts.json"
+		},
+		{
+			"id": "topicId02",
+			"selected": false,
+			"numDocuments": 5,
+			"name": "Topic 02 - Student Loans",			
+			"conceptsURL": "data/topic/topicId02/concepts.json"
+		},
+		{
+			"id": "topicId03",			
+			"selected": true,
+			"numDocuments": 10,
+			"name": "Topic 03 - Global Financial Crisis",
+			"conceptsURL": "data/topic/topicId03/concepts.json"
+		}
+	]
+}

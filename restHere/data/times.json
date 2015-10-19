@@ -1,0 +1,72 @@
+[
+    {
+        "drived": "0:00",
+        "needToDrive": "3:00",
+        "nextRest": "60"
+    },
+    {
+        "drived": "0:01",
+        "needToDrive": "2:59",
+        "nextRest": "59"
+    },
+    {
+        "drived": "0:02",
+        "needToDrive": "2:58",
+        "nextRest": "58"
+    },
+    {
+        "drived": "0:03",
+        "needToDrive": "2:57",
+        "nextRest": "57"
+    },
+    {
+        "drived": "0:04",
+        "needToDrive": "2:56",
+        "nextRest": "56"
+    },
+    {
+        "drived": "0:05",
+        "needToDrive": "2:55",
+        "nextRest": "55"
+    },
+    {
+        "drived": "0:06",
+        "needToDrive": "2:54",
+        "nextRest": "54"
+    },
+    {
+        "drived": "0:07",
+        "needToDrive": "2:53",
+        "nextRest": "53"
+    },
+    {
+        "drived": "0:08",
+        "needToDrive": "2:52",
+        "nextRest": "52"
+    },
+    {
+        "drived": "0:09",
+        "needToDrive": "2:51",
+        "nextRest": "51"
+    },
+    {
+        "drived": "0:10",
+        "needToDrive": "2:50",
+        "nextRest": "50"
+    },
+    {
+        "drived": "0:11",
+        "needToDrive": "2:49",
+        "nextRest": "49"
+    },
+    {
+        "drived": "0:12",
+        "needToDrive": "2:48",
+        "nextRest": "48"
+    },
+    {
+        "drived": "0:13",
+        "needToDrive": "2:47",
+        "nextRest": "47"
+    }
+]

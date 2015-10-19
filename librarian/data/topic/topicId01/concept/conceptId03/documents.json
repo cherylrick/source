@@ -1,0 +1,32 @@
+{
+	"thisURL": "data/topicId01/concept/conceptId03/documents",
+	"topic" : {
+		"id": "topicId01",
+		"name": "Topic 01 - Real Estate",
+		"selected": true
+	},
+	"concept" : {
+		"id": "conceptId03",
+		"name": "ConceptId03 - Commercial Real Estate",
+		"selected": true
+	},
+	"documents": [
+		{
+			"id": "documentId031",
+			"selected": true,
+			"title": {
+				"selected":true,
+				"text":"documentId031 - Commercial Real Estate trend"},			
+			"documentURL": "data/document/documentId031.json"
+		},
+		{
+			"id": "documentId032",
+			"selected": true,
+			"title": {
+				"selected":true,
+				"text":"documentId032 - Commercial Real Estate trend"},			
+			"documentURL": "data/document/documentId032.json"
+		}
+	]
+}
+

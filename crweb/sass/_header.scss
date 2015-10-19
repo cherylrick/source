@@ -1,0 +1,20 @@
+/* ----------------------------  header  ------------------------- */
+$headerBg: #405c71;
+$headerColor: #fff;
+
+header {
+	color: $headerColor;
+	padding-top: 20px;
+	background-color: $headerBg;
+}
+
+header h1 {
+	font-size: 165%;
+	font-weight: normal;
+	margin: 0;
+}
+
+header a span {
+	font-size: 52%;
+	margin: 0;
+}

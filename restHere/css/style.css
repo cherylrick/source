@@ -1,0 +1,75 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f6f6f6;
+}
+ 
+hr { 
+    border: 1px solid #ccc; 
+    width: 95%; 
+    padding: 0;
+}
+
+footer { 
+    padding: 20px; 
+    background-color: #6495ED; 
+    color: #ccc; 
+}
+
+footer a {
+    color: #fff;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container-fluid {
+    position: relative; 
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+    
+    
+.header-bar { 
+    background-color: #6495ED; 
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+}
+
+.centeralign { text-align: center; }
+
+.time {
+    font-size: 400%;
+}
+
+#tagline {
+    color: rgb(149, 165, 166);
+    font-size: 150%;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#map_canvas {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#infobox { 
+    background-color: #47a0db; 
+    padding: 10px;
+    color: #fff;
+}
+
+#voc {
+    padding: 15px 25px;
+    font-size: 150%;
+}
+

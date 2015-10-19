@@ -1,0 +1,12 @@
+{
+	"thisURL": "http://..../topics",
+	"topics": [
+		{
+			"id": "the topic id",
+			"name": "user edited name (which if no changes, is the Sophia suggested name",
+			"selected": true,
+			"numDocuments": 20,
+			"conceptsURL": "http://.../topic/[topicId]/concepts"
+		}
+	]
+}

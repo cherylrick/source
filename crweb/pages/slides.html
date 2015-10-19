@@ -1,0 +1,66 @@
+	<h1>Sideshow </h1>
+
+       <section class="slide" cycle data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+    <!--       <img src="images/bee.jpg" alt="Bee">
+           <img src="images/duck.jpg" alt="Duck">
+           <img src="images/squirrel.jpg" alt="Squirrel"> 
+            <span class="cycle-prev">&laquo;</span>							
+            <span class="cycle-next">&raquo;</span>							
+            <span class="cycle-pager"></span>-->
+
+            <div>
+                <img src="images/bee.jpg" alt="Bee">
+                <div class="slide-text">
+                    <h3>Bee Title Here!</h3>
+                    <p>This is the caption or descriptive text for the bee slide. <a href="#" class="btn-a">Call to action!</a></p>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/duck.jpg" alt="Duck">
+                <div class="slide-text">
+                    <h3>Duck Title Here!</h3>
+                    <p>This is the caption or descriptive text for the duck slide.</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/squirrel.jpg" alt="Squirrel">
+                <div class="slide-text">
+                    <h3>Squirrel Title Here!</h3>
+                    <p>This is the caption or descriptive text for the squirrel slide.</p>
+                </div>
+            </div> 
+
+        </section> --
+<!--
+    <div class="slider" ng-controller="slidesController">
+        <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
+             ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+             ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+        <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+        <a class="arrow next" href="#" ng-click="prevSlide()"></a>
+        <nav class="nav">
+            <div class="wrapper">
+                <ul class="dots">
+                    <li class="dot" ng-repeat="slide in slides">
+                        <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                           ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        
+   <!--   <div class="slide" ng-repeat="image in images" ng-show="image.visible">
+        <img ng-src="images/{{image.src}}" />
+      </div>
+      <div class="arrows">
+        <a href="#" ng-click="prev()">
+          <img src="images/prev.png" />
+        </a>
+        <a href="#" ng-click="next()">
+          <img src="images/next.png" />
+        </a> 
+      </div> 
+    </div>-->

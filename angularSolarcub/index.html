@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="solarApp">
+<head>
+    <title>solarcub</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+</head>
+<body>
+<div class="container-fluid">
+
+  <div class="container"  ng-controller="mainController">
+    <div class="row">
+      <div id="brand-cover" class="col-sm-offset-4 col-sm-8">
+        <h1 id="tagline" title="Telling you about the rates you deserve - no pressure.
+We respect your privacy
+"><img id="solarcublogo" src="images/solarcub-logo.png" alt="SolarCub" />Respecting your right to choose in solar</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <form class="form-horizontal" name="form" id="solarform" novalidate>
+
+          <div class="form-group">
+            <label for="city" class="col-sm-4 control-label">What is your City?</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" name="city" id="city" placeholder="What's Your City?" ng-model="formData.city" googleplace required autofocus />
+                <br>
+                <div class="alert" id="cityError" ng-class="{ 'alert-danger': formData.city === undefined || formData.city.length < 2 }" ng-show="cityRequired">{{ cityRequired }}</div>
+            </div>
+          </div>
+            
+          <div class="form-group" id="orientation">
+            <label for="orientation" class="col-sm-4 control-label">What way does your roof face?</label>
+            <div class="col-sm-8">
+              <div class="radioGroup">                  
+				<input type="radio" name="orientation" id="south" value="180" class="sr-only" ng-model="formData.orientation" required />
+                <label class="btn btn-default short" for="south">
+				    <img src="images/roofOrientation/south.png" alt="South" /><br>South</label>  
+              </div>
+              <div class="radioGroup">
+				<input type="radio" name="orientation" id="west" value="225" class="sr-only" ng-model="formData.orientation" required />
+                <label class="btn btn-default" for="west">									
+				    <img src="images/roofOrientation/west.png" alt="West" /><br>West</label>
+              </div>
+              <div class="radioGroup">
+				<input type="radio" name="orientation" id="southwest" value="90" class="sr-only" ng-model="formData.orientation" required />
+                <label class="btn btn-default" for="southwest">
+				    <img src="images/roofOrientation/southwest.png" alt="South" /><br>SouthWest</label>
+              </div>
+              <div class="radioGroup">
+				<input type="radio" name="orientation" id="southeast" value="135" class="sr-only" ng-model="formData.orientation" required />
+                <label class="btn btn-default" for="southeast">
+				    <img src="images/roofOrientation/southeast.png" alt="SouthEast" /><br>SouthEast</label>
+              </div>
+            <div class="alert" id="orientationError" ng-class="{ 'alert-danger': formData.orientation === undefined }" ng-show="orientationRequired">{{ orientationRequired }}</div>
+            </div>
+          </div>
+
+          <div class="form-group" id="tilt">
+            <label for="tilt" class="col-sm-4 control-label">What does your roof look like?</label>
+            <div class="col-sm-8">
+                <div class="radioGroup">
+                    <input type="radio" name="tilt" id="flatroof" value="0" class="sr-only" ng-model="formData.tilt" required /> 
+				    <label class="btn btn-default short2" for="flatroof">
+				        <img src="images/roofIncline/flat-roof.png" alt="Flat roof" />
+                    </label>
+                </div>	
+                <div class="radioGroup">
+				    <input type="radio" name="tilt" id="slighttilt" value="15" class="sr-only" ng-model="formData.tilt" required />
+                    <label class="btn btn-default" for="slighttilt"> 
+                        <img src="images/roofIncline/no-tree-coverage.png" alt="Slightly tilt" />
+                    </label>
+                </div>
+                <div class="radioGroup">
+                    <input type="radio" name="tilt" id="slightincline" value="30" class="sr-only" ng-model="formData.tilt" required /> 
+                    <label class="btn btn-default short2" for="slightincline">
+				        <img src="images/roofIncline/slight-incline-roof.png" alt="Tilt" />
+                    </label>
+				</div>
+                <div class="alert" ng-class="{ 'alert-danger': formData.tilt === undefined }" id="tiltError" ng-show="tiltRequired">{{ tiltRequired }}</div>
+            </div>
+          </div>
+
+          <div class="form-group" id="tree">
+            <label for="tree" class="col-sm-4 control-label"> What does your house look like?</label>
+            <div class="col-sm-8">
+				<div class="radioGroup">							
+                    <input type="radio" name="tree" id="notree" value="1" class="sr-only" ng-model="formData.tree" required />
+				    <label class="btn btn-default" for="notree">
+				        <img src="images/roofShading/no-tree-coverage.png" alt="No tree" />
+                    </label>	
+				</div> 
+							
+				<div class="radioGroup">
+				    <input type="radio" name="tree" id="smalltree" value="1.0" class="sr-only" ng-model="formData.tree" required /> 
+                    <label class="btn btn-default" for="smalltree">
+				        <img src="images/roofShading/small-tree-coverage.png" alt="Small trees" />
+                    </label>
+                </div>
+                <div class="radioGroup">
+                    <input type="radio" name="tree" id="bigtree" value="0.85" class="sr-only" ng-model="formData.tree" required /> 
+                    <label class="btn btn-default" for="bigtree">
+				        <img src="images/roofShading/west-east-big-tree-coverage.png" alt="Trees slightly cover the roof" />
+                    </label>
+				</div>
+				<div class="radioGroup">
+                    <input type="radio" name="tree" id="shadetree" value="0.5" class="sr-only" ng-model="formData.tree" required /> 
+                    <label class="btn btn-default" for="shadetree">
+				        <img src="images/roofShading/all-side-big-tree-coverage.png" alt="Big tree shading the roof" />
+                    </label>
+				</div>	                
+                <div class="alert" id="treeError" ng-class="{ 'alert-danger': formData.tree === undefined }" ng-show="treeRequired">{{ treeRequired }}</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bill" class="col-sm-4 control-label">What is your average monthly electric bill? </label>
+            <div class="col-sm-8">
+              <select id="bill" name="bill" class="form-control"  ng-model="formData.bill" required>
+                <option value="80">$0 - $80</option>
+                <option value="100">$80 - $120</option>
+                <option value="150">$120 - $180</option>
+                <option value="200">$180+</option>
+              </select>
+              <div class="alert" id="billError" ng-class="{ 'alert-danger': formData.bill === undefined }" ng-show="billRequired">{{ billRequired }}</div>  
+            </div>
+            
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-8">
+              <button type="submit" id="estimate" class="btn btn-primary" ng-click="init()" >Estimate</button>
+              <button type="reset" id="clear" class="btn btn-secondary" onclick="window.location.reload()">Reset</button>
+            </div>
+          </div>
+            <!-- <pre>{{ formData }}</pre> -->
+        </form>        
+      </div>
+      <hr />
+			
+      <div id="to-be-hidden" ng-animate="animate" >
+
+        <div class="row">
+          <div class="col-sm-4">
+              <h3 class="resultTitle">SolarCub calculates that solar could save you annualy:</h3>
+            <div class=" result">
+                <p class="usd">&#x24; <span aria-hidden="true" id="save" ng-show="savings">{{ savings }}</span></p>
+                
+            </div>  
+          </div>
+
+          <div class="col-sm-4"> <!-- suggested vendor list -->
+            <h3 class="resultTitle">We found the 3 providers that give customers with roofs like yours the best deal:</h3>
+            <div id="vendors">
+                <div class="suggestion" ng-repeat="vendor in vendors">
+                    <a class="link-vendor" href="{{ vendor.link }}" target="_blank">
+                        <img class="link-img" src="{{ vendor.logo }}" height="75"/>
+                    </a>
+                </div>
+              
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <h3 class="resultTitle">SolarCub’s proprietary database shows you can ask for a rate as low as:</h3>
+            <div class="result">
+                <p class="usd"><span id="cent" ng-show="customerInfo.roundedPrice">{{ customerInfo.roundedPrice }}</span>&cent;&#47;kWh</p> 
+            </div>            
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- end of row -->
+    
+    <footer class="footer">
+        <p class="text-muted">&copy; 2015 SolarCub.</p>
+
+    </footer>
+
+  </div>  <!-- end of container -->
+
+</div>  <!-- end of container-fluid -->
+    
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.3.15/angular-route.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvP0R8I_EFGp2FL0h8erEkev1e4FPshKE&libraries=places"></script> 
+<script src="app.js"></script>
+
+</body>
+</html>
+

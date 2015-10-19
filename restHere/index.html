@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Hack A Car</title>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  
+   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Include the Google Maps API library - required for embedding maps -->
+ <!-- <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvP0R8I_EFGp2FL0h8erEkev1e4FPshKE&libraries=places"></script> 
+  
+ <script type="text/javascript">
+  
+ // The latitude and longitude of your business / place
+ 
+ </script>              
+</head>
+<body>
+<div id="map_canvas"></div>
+
+<div class="container-fluid">
+    
+   <div class="container-fluid">
+      <!-- Static navbar -->
+      <div class="header-bar">   
+        <div class="input-group" id="search_field">
+            <input type="text" class="form-control" id="destination" placeholder="Enter destination" autofocus  autocomplete="off" />
+            <span class="input-group-addon glyphicon glyphicon-search" id="track"></span>
+            
+        </div>
+        <div id="locations">
+            <p class="title">From around: <span id="fromlocation">1000 Van Ness Avenue, San Francisco, CA, United States</span></p>
+            <p class="title">To: <span id="tolocation">Yellowstone National Park, WY, United States</span></p>
+          </div>  
+      </div><!--/.nav-header -->
+   </div> <!-- end of container -->
+    
+   <div class="container-fluid" id="infobox">    
+     <div class="centeralign">  
+         
+       <div class="slideToggle">
+           <div class="row">
+             <div class="col-xs-6">
+               <p class="title">Until Destination</p>
+               <div><span class="time" id="to_time">5:00</span>
+                   <span> hours</span>                
+               </div>  
+             </div>
+               <div class="col-xs-6">
+               <p class="title">Activate voice feature</p>
+               <button class="btn btn-default" id="voc">Voice</button>
+                <div id="response"></div>
+               </div>   
+           </div> <!-- end of row -->
+
+           <hr>
+
+           <div class="row">
+             <div class="col-xs-6">
+               <h4 class="title">Time spent on road</h4>
+               <div><span class="time" id="time_used">1:00</span>
+                   <span> hours</span>                
+               </div>   
+             </div>
+             <div class="col-xs-6">
+                 <h4 class="title">Rest in</h4>
+                   <div><span class="time" id="time_to_rest">50</span>
+                   <span> mins</span>                
+               </div>  
+               </div>
+           </div> <!-- end of row -->
+        </div> <!-- slideToggle -->
+         <button class="btn btn-default" id="toggleBtn">Toggle</button>
+     </div> <!-- end of centeralign -->
+   </div>  <!-- end of the info container  -->
+    
+   <div class="container-fluid" id="thefooter">
+        <footer class="navbar-fixed-bottom centeralign">
+            <div class="row">
+              <div class="col-xs-4">
+                <a href="#" id="to">Destination</a>
+              </div>
+              <div class="col-xs-4">
+                <a href="#" id="places">Places</a>
+              </div>  
+              <div class="col-xs-4">
+                <a href="#" id="favorites">Favorites</a>
+              </div>    
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <p><small>&copy; 2015 Rest Here.</small></p>
+                </div>    
+            </div> 
+        </footer>
+    </div>  <!-- end of the footer container -->    
+</div>  <!-- end of container-fluid -->    
+   
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/voice.js"></script>
+</body>
+</html>

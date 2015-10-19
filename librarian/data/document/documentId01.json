@@ -1,0 +1,68 @@
+{
+	"thisURL": "data/document/documentId01.json",
+	"topic" : {		
+		"id": "topicId01",
+		"name": "Topic 01 - Real Estate",
+		"selected": true
+	},
+	"concept" : {		
+		"id": "conceptId01",
+		"name": "conceptId01 - Commercial Real Estate",
+		"selected": true
+	},
+	"document": {
+		"id": "documentId01",
+		"sourceId": "documentId01",
+		"title": {			
+			"selected": true,
+			"text": "documentId01 - Commercial Real Estate trend"
+		},	
+		"summary": {			
+			"selected": true,
+			"text": "documentId01 - summary Commercial Real Estate trend"
+		},	
+		"bodyURL":  "data/document/documentId01/body.json",
+		"selected": true,
+		"tags": [
+			{
+				"selected":  true,
+				"sophiaName": "the tag name suggested by Sophia (never changed)",
+				"name": "tag name 01"
+			},
+			{
+				"selected": false,
+				"sophiaName": "the tag name suggested by Sophia (never changed)",
+				"name":  "tag name 02"
+			},			
+			{
+				"selected": true,
+				"sophiaName": "the tag name suggested by Sophia (never changed)",
+				"name":  "tag name 03"
+			},	
+			{
+				"selected": false,
+				"sophiaName": "the tag name suggested by Sophia (never changed)",
+				"name":  "tag name 04"
+			},
+			{
+				"selected": true,
+				"sophiaName": "the tag name suggested by Sophia (never changed)",
+				"name":  "tag name 05"
+			}					
+		],
+		"neighbors" : [
+			{
+				"id": "documentId02",
+				"selected":  false,
+				"documentURL": "data/document/documentId02.json"
+			},
+			{
+				"id": "documentId03",
+				"selected":  true,
+				"documentURL": "data/document/documentId03.json"
+			}
+		]
+	}
+}
+
+

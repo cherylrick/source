@@ -1,0 +1,84 @@
+/* ---------------------    Form styles   ------------------- */
+form {
+	background-color: #ececec;
+	padding: 30px 40px;
+}
+
+.hidden-label {
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+fieldset {
+	background-color: #fff;
+    padding: 15px;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	color: #777;
+}
+
+fieldset label {
+    padding-left: 5px;
+    padding-right: 15px;
+    font-weight: normal;
+}
+
+input, select, textarea {
+	font-family: Tahoma, sans-serif;
+	font-size: 100%;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+select,
+textarea
+ {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	padding: 0 10px;
+	height: 40px;
+	margin-bottom: 0px;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+}
+
+textarea {
+	height: 100px;
+	padding-top: 10px;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+select:focus,
+select option:focus,
+textarea:focus {
+	border: 1px solid #869960;
+	box-shadow: inset 2px 2px 2px rgba(0,0,0, .13);
+	outline: 0;
+}
+
+input[type="submit"] {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background-color: #869960;
+	color: #fff;
+	padding: 10px 0;
+	border: 1px solid #798a56;
+	border-radius: 3px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	border: 1px solid #535e3b;
+	background-color: #798a56;
+	outline: 0;
+}

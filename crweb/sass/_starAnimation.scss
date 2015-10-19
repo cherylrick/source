@@ -1,0 +1,36 @@
+/* ------------------- Star Animation ----------------- */
+@keyframes slideSpin {
+	50% {
+		transform: translateX(150%) scale(.5);
+	}
+	
+	75% {
+		transform: translateX(150%) rotate(180deg) scale(.5);
+	}
+	
+	100% {
+		transform: translateX(300%) rotate(180deg);
+	}
+}
+
+@-webkit-keyframes slideSpin {
+	50% {
+		transform: translateX(150%) scale(.5);
+	}
+	
+	75% {
+		transform: translateX(150%) rotate(180deg) scale(.5);
+	}
+	
+	100% {
+		transform: translateX(300%) rotate(180deg);
+	}
+}
+
+.star {
+	/* animation name, duration, iteration-count, direction. fill-mode,  */
+	-webkit-animation: slideSpin 2s infinite alternate forwards;
+	animation: slideSpin 2s forwards infinite alternate;
+	width: 25%;
+	height: auto;
+}

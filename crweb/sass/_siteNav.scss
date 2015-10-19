@@ -1,0 +1,60 @@
+
+/* ----------------  site nav bar - horizontal  ---------------- */
+$navbgA: #365267;
+$navColorA: #fff;
+$navColorHover: #2c465a;
+
+.site-nav { 
+	margin-top: 20px;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+
+.site-nav a {
+	display: block;
+	padding: 10px 20px;
+	background-color: $navbgA; /* #365267; */
+	color: $navColorA;
+	transition-property: all;
+	transition-duration: 2s;
+}
+
+.site-nav a:hover {
+	background-color: lighten($navbgA, 80%);
+	color: $navColorHover;
+}
+
+.site-nav a.current {
+	background-color: lighten($navbgA, 50%);
+	color: $navColorHover;
+}
+
+@media screen and (max-width: 1023px) {
+	.site-nav li {
+		width: 33.332%;
+		margin-right: 0;
+	}
+	
+	.site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.site-nav li {
+		width: 50%;
+	}
+}
+/* End site navigation */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="spaApp">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>C. R. Web Development</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="section">
+        <div class="container">
+            <h1><a href="#/">C. R. Web Development
+            <span class="spacing">Web Design &amp; Development</span></a></h1>
+
+            <span data-toggle-target=".site-nav" class="toggle-btn">MENU</span>
+            <nav class="site-nav">
+                <ul class="group"  ng-controller="NavigationCtrl">
+                    <li><a href="#/" ng-class="{ current: isCurrentPath('/') }">Home</a></li>
+                    <li><a href="#/slides" ng-class="{ current: isCurrentPath('/slides') }">Slides Show</a></li>
+                    <li><a href="#/animations" ng-class="{ current: isCurrentPath('/animations') }">Animations</a></li>
+                    <li><a href="#/forms" ng-class="{ current: isCurrentPath('/forms') }">Forms</a></li>
+                    <li class="hide-small"><a href="#/faqs" ng-class="{ current: isCurrentPath('/faqs') }">FAQs</a></li>
+                    <li class="hide-small"><a href="#/links" ng-class="{ current: isCurrentPath('/links') }">Links</a></li>
+                    <li><a href="#/photoGallery" ng-class="{ current: isCurrentPath('/photoGallery') }">Photo Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+    <div class="content-area group section">
+        <div class="container">
+
+            <div class="row">
+                <main class="col col-md-8 push-down-sm main-area ng-view">
+
+                </main> <!-- col-md-8 -->
+
+                <aside class="col col-md-4 sidebar">
+                    <h3>Secondary Information </h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                    </p>
+                    <p>
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                    </p>
+                </aside>
+            </div> <!-- row -->
+
+        </div> <!-- container -->
+    </div>
+
+
+    <footer class="navbar navbar-inverse navbar-fixed-bottom">
+            <p>&copy; 2015 - C. R. Web Development.</p>
+            <p class="highlight">All right reserved.</p>	
+    </footer>
+		
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.4/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.4/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.4/angular-animate.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
+	<script src="js/declarativeToggle.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
