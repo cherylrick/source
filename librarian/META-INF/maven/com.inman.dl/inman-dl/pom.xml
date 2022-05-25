@@ -16,7 +16,7 @@
         <librarian.server.contextpath>/librarian</librarian.server.contextpath>
         <tomcat.server>tomcat7</tomcat.server>
         <tomcat.url>http://localhost:8080/manager/html</tomcat.url>
-        <spring.version>3.0.5.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
     </properties>
     <dependencies>
         <dependency>
